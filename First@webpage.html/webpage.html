@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .btn {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.success {background-color: #4CAF50;} /* Green */
+.success:hover {background-color: #46a049;}
+
+.info {background-color: #2196F3;} /* Blue */
+.info:hover {background: #0b7dda;}
+
+.warning {background-color: #ff9800;} /* Orange */
+.warning:hover {background: #e68a00;}
+
+.danger {background-color: #f44336;} /* Red */ 
+.danger:hover {background: #da190b;}
+
+.default {background-color: #e7e7e7; color: black;} /* Gray */ 
+.default:hover {background: #ddd;}
+  /*for gallery of pictures*/
+  div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+ .parallax {
+  /* The image used */
+  background-image: url(/First@webpage.html/background.png.png);
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+ }
+  /*text in centre*/
+    div.a {
+  text-align: center;
+  color: white;
+  width: 100%;
+  padding: 20px;
+}
+
+  /* acoordian in service */
+  .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+/* services form */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+  .regform {
+    background-color: transparent;
+    font-size: 21px;
+    font-weight: 600;
+    display: grid;
+}
+.regform input {
+    height: 30px;
+    border-radius: 30px;
+    border: 1px solid #a79797;
+    margin-top: 5px;
+    background: transparent;
+    color: #111;
+}
+.fromHeader{
+    color: black;
+    font-size:35px;
+    text-align:left;
+}
+.Submit-button{
+    background:green;
+    color:white;
+    padding: 10px;
+    width: 100%;
+    height:38px;
+    font-size: 16px;
+    font-weight:100;
+    border: none;
+}
+body {font-family: Arial;}
+
+.header{ background-image: url(../First@webpage.html/background.png.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: 1px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  padding: 5px 20px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+</head>
+<body>
+
+<h2>Website example</h2>
+
+<div class="tab">
+  <button class="tablinks active" onclick="openCity(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="openCity(event, 'Service')">Service</button>
+  <button class="tablinks" onclick="openCity(event, 'Contact')">Contact</button>
+  <button class="tablinks active" onclick="openCity(event, 'Gallery')">Gallery</button>
+  <button class="tablinks active" onclick="openCity(event,'About')">About</button>
+</div>
+
+<div id="Home" class="tabcontent" style="background-image: url(../First@webpage.html/background.png.png); height:100vh;background-size:cover;background-position:center;">
+    <div class="a">
+       
+        <h1>Bikes</h1>
+        <p> Bikes are faster than car .Fist cyclist that drove his bicycle around the world was Fred A. Birchmore. He pedaled for 25,000 miles and traveled other 15,000 miles by boat. He wore out 7 sets of tires.
+          Energy and resources that are used for creation of one single car can be used for creation of up to 100 bicycles.
+          Fist Mountain Bikes were made in 1977.
+          United States is the home of over 400 cycling clubs.
+          10% of New York City’s workforce commutes daily on bicycles.
+          36% of Copenhagen’s workforce commute daily on bicycles, and only 27% drive cars. In that city bicycles can be rented for free.
+          40% of all Amsterdam’s commutes are made on a bike</p>
+      
+      
+  
+</div>
+
+
+</div>
+
+<div id="Service" class="tabcontent">
+  
+<p>Click on the buttons to open the collapsible content.</p>
+
+<button class="accordion active">What can you help me with ?</button>
+<div class="panel">
+  <p>With whatever we can. Preparing cost analysis, establishing team roles, creating road maps. Defining business goals, key business values, target users, main features, prioritizing. We can find you similar projects that are already active on the market to benchmark against. We can assist you with creating user personas, mock-ups, user stories, time frame, establishing project status and preparing project estimation. We’ll be happy to outline project specification, prepare wireframes, details concerning integrations with external services, API documentation, required features list.</p>
+</div>
+
+<button class="accordion">How do i create product with you ?</button>
+<div class="panel">
+  <p> If you have an idea contact us by our e-mail or phone. We’ll meet and talk it over. Just be sure to prepare as much info about your idea as possible, it will smoothen the meeting and benefit further cooperation.</p>
+</div>
+
+<button class="accordion">How do we guarantee product quality ?</button>
+<div class="panel">
+  <p>We evaluate the result on each day until we satisfied with the performance, we test our work (we conduct both development and acceptance tests), we present it to you, we apply your feedback so you know you get what you are paying for.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+  <h3>Details of our company</h3>
+  <p>FREQUENTLY ASKED QUESTIONS.</p>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <fieldset> 
+    <h2 class="fromHeader"> Enter your contact details.</h2> 
+    
+<div class = "regform">
+<label>Name</label>
+<input type="text" name="name" >
+</div> 
+<br><br>
+<div class = "regform">
+<label> Phone No.</label>
+<input type="number" name="PHONE NO."> 
+</div>
+<br><br>
+<div class = "regform">
+<label> Email </label>
+<input type="email" name="EMAIL">
+</div> 
+<br><br>
+<div class = "regform">
+<label> Password </label>
+<input type="password" name="PASSWORD">
+</div>
+<br><br>
+ <button class="Submit-button" type="submit" >Submit</button> 
+  </fieldset> 
+ 
+</div>
+
+
+
+
+  <div id="Gallery" class="tabcontent">
+    <p>Scroll Up and Down this page to see the parallax scrolling effect.</p>
+
+    <div class="parallax"></div>
+    
+    <div style="height:1000px;background-color:rgb(243, 136, 136);font-size:36px">
+    Scroll Up and Down this page to see the parallax scrolling effect.
+    This div is just here to enable scrolling.
+    Tip: Try to remove the background-attachment property to remove the scrolling effect.
+    </div>    
+    
+  </div>
+
+  <div id="About" class="tabcontent">
+    <div class="gallery">
+      <a target="_blank" href="../First@webpage.html/lion.jpg.jpg">
+        <img src="../First@webpage.html/lion.jpg.jpg" alt="Cinque Terre" width="600" height="400">
+      </a>
+      <div class="desc">Lion is king of jungle.</div>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="../First@webpage.html/logo.jpeg">
+        <img src="../First@webpage.html/logo.jpeg" alt="Forest" width="600" height="400">
+      </a>
+      <div class="desc">Our company logo</div>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="../First@webpage.html/download.jfif">
+        <img src="../First@webpage.html/download.jfif" alt="Northern Lights" width="600" height="400">
+      </a>
+      <div class="desc">Born on May 7, 1861 the Bard of Bengal </div>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="../First@webpage.html/black.jpeg">
+        <img src="../First@webpage.html/black.jpeg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">The term black panther is most frequently applied to black-coated leopards (Panthera pardus) of Africa and Asia and jaguars (P. onca) of Central and South America</div>
+    </div>
+
+    <h1>Alert Buttons</h1>
+
+    <button class="btn success">Success</button>
+    <button class="btn info">Info</button>
+    <button class="btn warning">Warning</button>
+    <button class="btn danger">Danger</button>
+    <button class="btn default">Default</button>
+
+
+  </div>
+
+
+
+
+<script>
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script>
+</body>
+</html> 
